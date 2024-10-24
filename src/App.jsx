@@ -1,12 +1,21 @@
 import './assets/css/main.css'
-// här ska jag inportera stormgray om jag gör en
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+
 
 function App() {
   
 
   return (
     <>
-     
+     {/* <div className="wrapper"> */}
+    <Header />
+      <main>
+
+      </main>
+      <Footer />
+    {/* </div> */}
     </>
   )
 }
