@@ -252,7 +252,7 @@ ol, ul {
         /* Logos end */   
 
     /* Showcase start */
-    .showcase {
+    .hero {
         display: flex;
         position: relative;
         padding-top: 6rem;

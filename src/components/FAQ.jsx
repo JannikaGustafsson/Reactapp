@@ -13,7 +13,7 @@ const FAQ = () => {
         <h4 className="h2">Any questions? Check out the FAQs</h4>
     </div>
     <div>
-        <P>Still have unanswered questions and need to get in touch?</P>
+        <p>Still have unanswered questions and need to get in touch?</p>
     </div>
     <div className="flex">       
     <div className="contact-box">
