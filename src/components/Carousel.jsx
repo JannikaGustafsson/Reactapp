@@ -6,17 +6,16 @@ import PhoneRight from '../assets/images/phone-right.png'
 const Carousel = () => {
   return (
     <section className="carousel-section">                       
-    <h2 className="h1 text">How Does It Work?                    
-    </h2>
+    <h2 className="h1 text">How Does It Work?</h2>
     <div className="carousel">
         <div className="carousel-item">
-            <img src={PhoneLeft} alt="" />
+            <img src={PhoneLeft} alt="A mobilephone tilted to the left" />
         </div>                    
         <div className="carousel-item">
-            <img src={PhoneClear} alt="" />
+            <img src={PhoneClear} alt="A mobilephone visually clerer than the other phones" />
         </div>                        
         <div className="carousel-item">
-            <img src={PhoneRight} alt="" />
+            <img src={PhoneRight} alt="A mobilephone tilted to the right" />
         </div>
     </div>
     <div className="text">

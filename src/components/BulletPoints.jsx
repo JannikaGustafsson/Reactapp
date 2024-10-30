@@ -13,11 +13,11 @@ const BulletPoints = () => {
             <div className="column-left">
                 <h4 className="h2">Make your money transfer simple and clear</h4>
                 <div>
-                    <img src="/images/icons/check-circle.svg" alt="" />
+                    <img src="/images/icons/check-circle.svg" alt="Check circle" />
                     <span className="bullet-text">Banking transactions are free for you</span>
                 </div>            
                 <div>
-                    <img src={CheckCircle} />
+                    <img src={CheckCircle} alt="Check circle" />
                     <span className="bullet-text">No monthly cash commission</span>
                 </div>            
                 <div className="push">
@@ -26,35 +26,35 @@ const BulletPoints = () => {
                 </div>
                 <a href="#" className="btn btn-primary btn-learn">
                     <span>Learn more</span>
-                    <img className="arrow" src={ArrowWhite} />
+                    <img className="arrow" src={ArrowWhite} alt="A white arrow" />
                 </a>
             </div>
             <div className="column-right">
                 <img src="/images/icons/chart1345.png" alt="" />
-                <img className="avatars" src={Avatar} />       
+                <img className="avatars" src={Avatar} alt="Avatars" />       
             </div>
         </div>
         <div className="flex row-2">
             <div className="column-left">
-                <img src={Contact} />           
-                <img className="img-card" src="/images/icons/card-petruding.png" alt="" />            
+                <img src={Contact} alt="Contact" />           
+                <img className="img-card" src="/images/icons/card-petruding.png" alt="A credit card petruding" />            
             </div>
             <div className="row-2column-2">
                 <h4 className="h2">Receive payment from international bank details</h4>
                 <div className="flex">
                     <div className="icon-container">
-                        <img src={CreditCard} />
+                        <img src={CreditCard} alt="A credit card" />
                         <p className="characters">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
                     </div>
                     <div className="icon-container">
-                        <img src={CashBack} />
+                        <img src={CashBack} alt="Cashback icon" />
                         <p className="characters">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
                     </div>
                 </div>
         
                 <a href="#" className="btn btn-primary btn-learn">
                     <span>Learn more</span>
-                    <img className="arrow" src={ArrowWhite} />
+                    <img className="arrow" src={ArrowWhite} alt="A white arrow" />
                 </a>
             </div>
         </div>

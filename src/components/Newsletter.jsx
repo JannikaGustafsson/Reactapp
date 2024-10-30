@@ -7,15 +7,14 @@ const Newsletter = () => {
     <section>
         <div id="newsletter" className="flex">
             <div className="flex bell-img">         
-                <img src={Bell} />
-                <h2>Subscribe to our newsletter to stay informed about latest updates            
-                </h2> 
+                <img src={Bell} alt="Bell icon" />
+                <h2>Subscribe to our newsletter to stay informed about latest updates</h2> 
             </div>        
         <div className="input-container">
             <div className="flex">            
-                <img src={Letter} />
-                <input className="input-c" type="text" placeholder="Your Email" />
-                <button className="style">Subscribe</button>
+                <img src={Letter} alt="Envelope icon" />
+                <input className="input-c" type="email" placeholder="Your Email" aria-label="Email address" />
+                <button className="style" aria-label="Subscribe to newsletter">Subscribe</button>
             </div>
         </div>
         </div>

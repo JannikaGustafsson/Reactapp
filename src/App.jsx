@@ -1,8 +1,7 @@
-import './assets/css/main.css'
+
+
 import Header from './components/Header'
 import Footer from './components/Footer'
-import NavbarLeft from './components/NavbarLeft'
-import NavbarRight from './components/NavbarRight'
 import Hero from './components/Hero'
 import FAQ from './components/FAQ'
 import Logos from './components/Logos'
@@ -12,30 +11,23 @@ import BulletPoints from './components/BulletPoints'
 import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
 
-
-
-function App() {
-  
+function App() {  
 
   return (
-    <>
-     {/* <div className="wrapper"> */}
+  <>    
     <Header />
-    <NavbarLeft />
-    <NavbarRight />
-      <main>
-        <Hero />
-        <Logos />
-        <Features />
-        <Carousel />
-      </main>
-      <BulletPoints />
-      <Reviews />
-      <FAQ />
-      <Newsletter />
-      <Footer />
-    {/* </div> */}
-    </>
+    <main>
+      <Hero />
+      <Logos />
+      <Features />
+      <Carousel />
+    </main>
+    <BulletPoints />
+    <Reviews />
+    <FAQ />
+    <Newsletter />
+    <Footer />         
+  </>
   )
 }
 

@@ -251,7 +251,7 @@ ol, ul {
         }    
         /* Logos end */   
 
-    /* Showcase start */
+    /* Hero start */
     .hero {
         display: flex;
         position: relative;
@@ -478,9 +478,7 @@ ol, ul {
         height: 350px;
         margin-right: 1rem;
     }
-    .quoutes {
-
-    }
+    
     .frannie-review {
         font-size: 18px;
         margin-bottom: 20px;

@@ -9,19 +9,20 @@ import Vector from '../assets/images/icons/Vector.svg'
 const Features = () => {
   return (
     <section className="features">           
-    <div className="iphone">
-        <img src={IphoneCard} alt="an iphone with a creditcard petruding" />
-    </div>
+        <div className="iphone">
+            <img src={IphoneCard} alt="An iphone with a credit card petruding" />
+        </div>
     <div className="text-features">
         <h1 className="h1">App Features</h1>
-        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis
+        <p className="text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis
             egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at
             nec lacus.
         </p>
         <div className="features-grid">
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={CreditCard} alt="" />
+                    <img src={CreditCard} alt="A credit card" />
                 </div>
                 <div>
                     <h3 className="h5">Easy Payments</h3>
@@ -30,7 +31,7 @@ const Features = () => {
             </div>
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={Shield} alt="" />
+                    <img src={Shield} alt="A Shield icon" />
                 </div>
                 <div>
                     <h3 className="h5">Data Security</h3>
@@ -39,7 +40,7 @@ const Features = () => {
             </div>
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={Bars} alt="" />
+                    <img src={Bars} alt="Horizontal bars" />
                 </div>
                 <div>
                     <h3 className="h5">Cost Statistics</h3>
@@ -48,7 +49,7 @@ const Features = () => {
             </div>
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={Bars} alt="" />
+                    <img src={Bars} alt="Horizontal bars" />
                 </div>
                 <div>
                     <h3 className="h5">Support 24/7</h3>
@@ -57,7 +58,7 @@ const Features = () => {
             </div>
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={Wallet} alt="" />
+                    <img src={Wallet} alt="A wallet icon" />
                 </div>
                 <div>
                     <h3 className="h5">Regular Cashback</h3>
@@ -66,7 +67,7 @@ const Features = () => {
             </div>
             <div className="feature-card">
                 <div className="icon-container">
-                    <img src={Vector} alt="" />
+                    <img src={Vector} alt="A card icon" />
                 </div>
                 <div>
                     <h3 className="h5">Top Standards</h3>

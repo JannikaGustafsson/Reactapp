@@ -7,36 +7,36 @@ import ArrowGreen from '../assets/images/icons/arrow-green.svg'
 const FAQ = () => {
   return (
     <section>
-    <div className="container-f">        
-    <div id="faq">
-    <div>
-        <h4 className="h2">Any questions? Check out the FAQs</h4>
-    </div>
+        <div className="container-f">        
+            <div id="faq">
+            <div>
+                <h4 className="h2">Any questions? Check out the FAQs</h4>
+        </div>
     <div>
         <p>Still have unanswered questions and need to get in touch?</p>
     </div>
     <div className="flex">       
     <div className="contact-box">
-        <img src={Telephone} />
+        <img src={Telephone} alt="A phone" />
         <p className="clr">Still have questions?</p>
         <a href="">Contact us</a>
-        <img src={ArrowBlue} />
+        <img src={ArrowBlue} alt="A blue arrow" />
     </div>
     <div className="contact-box">
-        <img src={Message} />
+        <img src={Message} alt="Message icon" />
         <p className="clr">Don't like phone calls?</p>
         <a href="">Contact us</a>
-        <img src={ArrowGreen} />
+        <img src={ArrowGreen} alt="A green arrow" />
     </div>
-</div>
-</div>    
-<div id="long-box">   
-    <div className="question-box">
-        <p className="txt-clr">Is any of my personal information stored in the App?</p>
-        <a href="#features" className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </a>
-    </div>        
+    </div>
+    </div>    
+        <div id="long-box">   
+        <div className="question-box">
+            <p className="txt-clr">Is any of my personal information stored in the App?</p>
+            <a href="#features" className="btn-round btn-gray">
+                <i className="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>        
     <div className="question-box">
         <p>What formats can I download my transaction history in?</p>
         <a href="#features" className="btn-round btn-gray">
@@ -55,10 +55,10 @@ const FAQ = () => {
             ut consequat.</p>
     </div>
     <div className="question-box">
-    <p>When can I use Banking App services?</p>
-    <a href="#features" className="btn-round btn-gray">
-        <i className="fa-solid fa-chevron-down"></i>
-    </a>
+        <p>When can I use Banking App services?</p>
+        <a href="#features" className="btn-round btn-gray">
+            <i className="fa-solid fa-chevron-down"></i>
+        </a>
     </div>
     <div className="question-box">
         <p>Can I create my own password that is easy for me to remember?                
