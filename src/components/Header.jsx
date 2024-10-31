@@ -11,6 +11,7 @@ const Header = () => {
              <img src={Logotype} alt="App Logo" />                
              </a>
              <a href="#" className="nav-link">Features</a>
+             <a href="#" className="nav-link">Contact</a>
          </div>                  
          <div className="right-navigation">
              <div id="darkmode-toggle">

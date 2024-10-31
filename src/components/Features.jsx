@@ -14,11 +14,9 @@ const Features = () => {
         </div>
     <div className="text-features">
         <h1 className="h1">App Features</h1>
-        <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis
+        <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis
             egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at
-            nec lacus.
-        </p>
+            nec lacus.</p>
         <div className="features-grid">
             <div className="feature-card">
                 <div className="icon-container">

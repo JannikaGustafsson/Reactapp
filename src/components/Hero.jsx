@@ -6,9 +6,9 @@ import Iphones from '../assets/images/phones.svg'
 
 const Hero = () => {
   return (    
-    <section className="Hero"> 
-        <div className="Hero-content">
-            <h2 className="d-4 margin">Manage All Your Money in One App</h2>           
+    <section className="hero">
+        <div>
+            <h2 className="d-4">Manage All Your Money in One App</h2>           
             <p className="text-lg text-2">We offer you a new generation of the mobile banking.</p>               
             <p className="text-lg text-2">Save, spend & manage money in your pocket.</p>                
         <div className="market-btns">
@@ -25,8 +25,8 @@ const Hero = () => {
                 <a href="#features" className="btn-round btn-white">
                     <i className="fa-solid fa-chevron-down"></i>
                 </a>
-            </div>
             <span>Discover more</span>
+            </div>
         </div>
         <img src={Iphones} alt="Iphones" />
     </section>

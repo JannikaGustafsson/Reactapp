@@ -11,7 +11,11 @@
     --clr-gray-800: #33354D;
     --clr-gray-900: #0B0F19;
 
-    --clr-primary: #6366F1;   
+    --clr-primary: #6366F1;
+    --clr-primary-h: 230;
+    --clr-primary-s: 90%;
+    --clr-primary-l: 70%;
+    --clr-white: #FFFFFF;   
 
     --clr-bg: #ffffff; 
 
@@ -20,7 +24,7 @@
     --clr-text-heading: var(--clr-gray-900);
     --clr-text-navigation: var(--clr-gray-800);
     --clr-market-btn: var(--clr-gray-900);
-    --clr-white-to-gray: #fff;
+    --clr-white-to-gray: #ffffff91;
 
     --clr-logo-bg: #F3F6FF;
 
@@ -38,6 +42,11 @@
 }
 html {
     color-scheme: light;
+}
+
+/* kolla sen!!! */
+html.dark-mode h1, html.dark-mode h2 {
+    color: var(--clr-white);
 }
 body {
     font-family: "Manrope", sans-serif;
@@ -99,9 +108,11 @@ ol, ul {
         font-size: 3.5rem;
         color: var(--clr-text-heading);
         font-weight: 800;
+        margin-bottom: 2rem;
     }
     .text-lg {
         font-size: 1.125rem;
+       
     }
 .btn {
     font-size: .875rem;
@@ -130,10 +141,12 @@ ol, ul {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    
 }
 .btn-white {
-    background-color: var(--clr-white-to-gray);
+    background-color: var(--clr-white);
     color: var(--clr-text-navigation);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     &:hover,
     &:focus-visible {
@@ -147,7 +160,9 @@ ol, ul {
        
     &:hover,
     &:focus-visible {
-        background-color: hsl(from var(--clr-primary) h s calc(1 - 10));
+        background-color: hsl(var(--clr-primary-h), var(--clr-primary-s), calc(var(--clr-primary-l) - 10%)
+        );
+        
     }
 }
 .toggle {
@@ -262,6 +277,9 @@ ol, ul {
         background: rgb(99,102,241);
         background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,69,239,0.01) 42%, rgba(241,244,253,0.07) 83%);
         
+        .hero-content {
+
+        }
         
         .market-btns {
             display: flex;
@@ -284,6 +302,7 @@ ol, ul {
             bottom: 2.5rem;
             align-items: center;
             gap: 1rem;
+            
         }      
         .container {
             position: relative;
@@ -301,28 +320,26 @@ ol, ul {
         }           
         }
         .text-2 {
-            text-align: start;
-        }   
-           
-        .features {
-           
+            text-align: start;        
+            
+        }           
+        .features {           
             padding-left: 20%;
             padding-right: 20%;
             display: flex;
-            margin-bottom: 7rem;
+            margin-bottom: 7rem;           
 
         .features-grid {
             display: grid;
             gap: 2rem;
             margin-top: 4rem;
-            margin-left: 2rem;
         }
         .text-features {
             margin-left: 20%;
-            margin-right: 15%;
 
                 h1 {
                     margin-bottom: 1rem;
+                    margin-top: 1rem;
                 }
         }
         .feature-card {
@@ -579,13 +596,14 @@ ol, ul {
         border: 0;
         cursor: pointer;
         margin-left: auto;
+        background-color: var(--clr-white);
     }
     .btn-gray {
         background-color: var(--clr-gray-100);
         color: var(--clr-text-navigation);        
     }
     .btn-round:hover {
-        background-color: var(--clr-primary);
+        background-color: var(--clr-white-to-gray);
     }
 
 #newsletter {
