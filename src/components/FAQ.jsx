@@ -8,29 +8,33 @@ const FAQ = () => {
   return (
     <section>
         <div className="container-f">        
-            <div id="faq">
+            <div className="faq">
             <div>
                 <h4 className="h2">Any questions? Check out the FAQs</h4>
         </div>
-    <div>
+    <div className="questionmark">
         <p>Still have unanswered questions and need to get in touch?</p>
     </div>
-    <div className="flex">       
+    <div className="flex contactboxes">       
     <div className="contact-box">
         <img src={Telephone} alt="A phone" />
         <p className="clr">Still have questions?</p>
+        <div className="contact-link">
         <a href="">Contact us</a>
         <img src={ArrowBlue} alt="A blue arrow" />
+        </div>
     </div>
     <div className="contact-box">
         <img src={Message} alt="Message icon" />
         <p className="clr">Don't like phone calls?</p>
+        <div className="contact-link">
         <a href="">Contact us</a>
         <img src={ArrowGreen} alt="A green arrow" />
+        </div>      
     </div>
     </div>
     </div>    
-        <div id="long-box">   
+        <div className="long-box">   
         <div className="question-box">
             <p className="txt-clr">Is any of my personal information stored in the App?</p>
             <a href="#features" className="btn-round btn-gray">
@@ -43,12 +47,12 @@ const FAQ = () => {
             <i className="fa-solid fa-chevron-down"></i>
         </a>            
     </div>
-    <div className="question-box">
+    <div className="question-box question-box-open">
         <p>Can I schedule future transfers?</p>
         <a href="#features" className="btn-round btn-primary">
             <i className="fa-solid fa-chevron-up"></i>
         </a>
-        <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus.
+        <p className="small">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus.
             Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis
             accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
             gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse

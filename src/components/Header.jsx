@@ -3,6 +3,7 @@ import Logotype from '../assets/images/icons/logo.svg'
 import IconSignIn from '../assets/images/icons/icon-signin.svg'
 
 const Header = () => {
+
   return (
     <header>
         <nav className="main-navigation">               
@@ -14,10 +15,10 @@ const Header = () => {
              <a href="#" className="nav-link">Contact</a>
          </div>                  
          <div className="right-navigation">
-             <div id="darkmode-toggle">
                  <span>Dark Mode</span>
-                 <label className="toggle" >
-                 <input id="darkmode-switch" type="checkbox" />
+             <div id="darkmode-toggle">
+                 <label className="toggle">
+                 <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" />
                  <span className="slider"></span>
                  </label>                   
              </div>                
@@ -32,3 +33,4 @@ const Header = () => {
 }
 
 export default Header
+
