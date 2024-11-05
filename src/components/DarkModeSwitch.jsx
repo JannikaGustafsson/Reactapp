@@ -33,12 +33,9 @@ const DarkModeSwitch = () => {
 
  
 
-    //  return (
-    //     <label className="toggle">
-    //              <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" />
-    //              <span className="slider"></span>
-    //              </label>        
-    // ) 
+    // return (
+        
+    // )
 }
 
 export default DarkModeSwitch

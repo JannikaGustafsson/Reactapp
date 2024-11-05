@@ -8,7 +8,7 @@ const FAQ = () => {
   return (
     <section>
         <div className="container-f">        
-            <div className="faq">
+            <div id="faq">
             <div>
                 <h4 className="h2">Any questions? Check out the FAQs</h4>
         </div>
@@ -34,48 +34,50 @@ const FAQ = () => {
     </div>
     </div>
     </div>    
-        <div className="long-box">   
+        <div className="long-box open">   
         <div className="question-box">
             <p className="txt-clr">Is any of my personal information stored in the App?</p>
-            <a href="#features" className="btn-round btn-gray">
+            <button className="btn-round btn-gray">
                 <i className="fa-solid fa-chevron-down"></i>
-            </a>
+            </button>
         </div>        
     <div className="question-box">
         <p>What formats can I download my transaction history in?</p>
-        <a href="#features" className="btn-round btn-gray">
+        <button className="btn-round btn-gray">
             <i className="fa-solid fa-chevron-down"></i>
-        </a>            
+        </button>            
     </div>
-    <div className="question-box question-box-open">
+    <div className="question-box">
         <p>Can I schedule future transfers?</p>
-        <a href="#features" className="btn-round btn-primary">
-            <i className="fa-solid fa-chevron-up"></i>
-        </a>
-        <p className="small">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus.
+        <button className="btn-round btn-gray">
+            <i className="fa-solid fa-chevron-down"></i>
+        </button>
+    </div>
+    <div className="expandable">
+    <p className="answer small">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus.
             Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis
             accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
             gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse
             ut consequat.</p>
-    </div>
+    </div>       
     <div className="question-box">
         <p>When can I use Banking App services?</p>
-        <a href="#features" className="btn-round btn-gray">
+        <button className="btn-round btn-gray">
             <i className="fa-solid fa-chevron-down"></i>
-        </a>
+        </button>
     </div>
     <div className="question-box">
         <p>Can I create my own password that is easy for me to remember?                
         </p>
-        <a href="#features" className="btn-round btn-gray">
+        <button className="btn-round btn-gray">
             <i className="fa-solid fa-chevron-down"></i>
-        </a>
+        </button>
     </div>
     <div className="question-box">
         <p>What happens if I forget or lose my password?</p>
-        <a href="#features" className="btn-round btn-gray">
+        <button className="btn-round btn-gray">
             <i className="fa-solid fa-chevron-down"></i>
-        </a>
+        </button>
     </div>
 </div>
 </div>

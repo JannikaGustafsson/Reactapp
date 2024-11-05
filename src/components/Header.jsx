@@ -18,7 +18,7 @@ const Header = () => {
                  <span>Dark Mode</span>
              <div id="darkmode-toggle">
                  <label className="toggle">
-                 <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" />
+                 <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" onChange="toggleDarkMode()" />
                  <span className="slider"></span>
                  </label>                   
              </div>                
