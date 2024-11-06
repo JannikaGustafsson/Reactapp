@@ -40,13 +40,16 @@ const Accordion = () => {
         gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse
         ut consequat.</p>
 </div> 
-    </div>        
-<div className="question-box">
-    <div className="questionbox-header">
-    <p>What formats can I download my transaction history in?</p>
+    </div>
+<div className={"question-box " + getAnswerClass(isOpen2)} onClick={() => handleClick(isOpen2, setIsOpen2)}>
+    <div className="flex questionbox-header">
+    <p>What formats can I download my transaction history in?</p>        
     <button className="btn-round btn-gray">
         <i className="fa-solid fa-chevron-down"></i>
     </button>            
+    </div>
+    <div className="expandable answer small">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero, aperiam similique architecto atque amet?</p>
     </div>
 </div>
 <div className={"question-box " + getAnswerClass(isOpen3)} onClick={() => handleClick(isOpen3, setIsOpen3)}>
@@ -63,32 +66,42 @@ const Accordion = () => {
         gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse
         ut consequat.</p>
 </div>    
-</div>
-     
-<div className="question-box">
-    <div className="questionbox-header">
+</div>     
+<div className={"question-box " + getAnswerClass(isOpen4)} onClick={() => handleClick(isOpen4, setIsOpen4)}>
+    <div className="flex questionbox-header">
     <p>When can I use Banking App services?</p>
     <button className="btn-round btn-gray">
         <i className="fa-solid fa-chevron-down"></i>
     </button>
     </div>
+    <div className="expandable answer small">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quasi suscipit alias maiores accusamus, voluptatibus voluptatem aliquam minus atque totam?</p>    </div>
 </div>
-<div className="question-box">
-    <div className="questionbox-header">
+
+
+<div className={"question-box " + getAnswerClass(isOpen5)} onClick={() => handleClick(isOpen5, setIsOpen5)}>
+    <div className="flex questionbox-header">
     <p>Can I create my own password that is easy for me to remember?                
     </p>
     <button className="btn-round btn-gray">
         <i className="fa-solid fa-chevron-down"></i>
     </button>
     </div>
+    <div className="expandable answer small">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>  
+
 </div>
-<div className="question-box">
-    <div className="questionbox-header">
+<div className={"question-box " + getAnswerClass(isOpen6)} onClick={() => handleClick(isOpen6, setIsOpen6)}>
+    <div className="flex questionbox-header">
     <p>What happens if I forget or lose my password?</p>
     <button className="btn-round btn-gray">
         <i className="fa-solid fa-chevron-down"></i>
     </button>
     </div>
+    <div className="expandable answer small">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dicta, fugit hic illo iste aperiam!</p>
+    </div>  
 </div>
 </div>
   )

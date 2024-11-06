@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './assets/index.css'
+import './assets//css/index.css'
+import './assets/css/dark-theme.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
@@ -10,6 +11,7 @@ import Carousel from './components/Carousel'
 import BulletPoints from './components/BulletPoints'
 import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
+import DarkModeSwitch from './components/DarkModeSwitch'
 
 
 
@@ -24,6 +26,7 @@ function App() {
         <Route />        
     </BrowserRouter> */}
     <Header />
+    <DarkModeSwitch />
     <main>
       <Hero />
       <Logos />
@@ -32,8 +35,7 @@ function App() {
     </main>
     <BulletPoints />    
     <Reviews />
-    <FAQ />
-    
+    <FAQ />    
     <Newsletter />
     <Footer />         
   </>

@@ -7,7 +7,7 @@ const DarkModeSwitch = () => {
     const toggleDarkMode = () => {
         const newMode = !isDarkMode;
         setIsDarkMode(newMode)
-    
+
         if (newMode) {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');        
@@ -16,12 +16,12 @@ const DarkModeSwitch = () => {
             document.documentElement.setAttribute('data-theme', 'light')
             localStorage.setItem('theme', 'light');
         }
-    }
+}
 
     useEffect(() => {
-        const saveTheme = localStorage.getItem('theme')
+        const savedTheme = localStorage.getItem('theme')
 
-        if (saveTheme === 'dark') {
+        if (savedTheme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
             setIsDarkMode(true)       
         }
@@ -33,9 +33,9 @@ const DarkModeSwitch = () => {
     }, []) 
 
     return (
-    <div id="darkmode-toggle">
+    <div className="darkModeSwitch">
         <label className="toggle">
-        <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" onChange="toggleDarkMode()" />
+        <input type="checkbox" aria-label="darkmode toggle" checked={isDarkMode} onChange={toggleDarkMode} />
         <span className="slider"></span>
         </label>                   
     </div> 
