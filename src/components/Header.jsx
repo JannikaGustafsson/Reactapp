@@ -1,6 +1,8 @@
 import React from 'react'
 import Logotype from '../assets/images/icons/logo.svg'
 import IconSignIn from '../assets/images/icons/icon-signin.svg'
+import DarkModeSwitch from './DarkModeSwitch'
+
 
 const Header = () => {
 
@@ -16,12 +18,7 @@ const Header = () => {
          </div>                  
          <div className="right-navigation">
                  <span>Dark Mode</span>
-             <div id="darkmode-toggle">
-                 <label className="toggle">
-                 <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" onChange="toggleDarkMode()" />
-                 <span className="slider"></span>
-                 </label>                   
-             </div>                
+                      <DarkModeSwitch />  
                 <a href="#" className="btn btn-primary btn-login">
                     <img src={IconSignIn} alt="Sign in Icon" />
                     <span>Sing in / up</span>

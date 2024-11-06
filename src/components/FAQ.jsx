@@ -3,6 +3,8 @@ import Telephone from '../assets/images/icons/telephone.svg'
 import ArrowBlue from '../assets/images/icons/arrow-blue.svg'
 import Message from '../assets/images/icons/message.svg'
 import ArrowGreen from '../assets/images/icons/arrow-green.svg'
+import Accordion from './Accordion'
+
 
 const FAQ = () => {
   return (
@@ -30,56 +32,12 @@ const FAQ = () => {
         <div className="contact-link">
         <a href="">Contact us</a>
         <img src={ArrowGreen} alt="A green arrow" />
-        </div>      
+        </div>
+
     </div>
     </div>
     </div>    
-        <div className="long-box open">   
-        <div className="question-box">
-            <p className="txt-clr">Is any of my personal information stored in the App?</p>
-            <button className="btn-round btn-gray">
-                <i className="fa-solid fa-chevron-down"></i>
-            </button>
-        </div>        
-    <div className="question-box">
-        <p>What formats can I download my transaction history in?</p>
-        <button className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>            
-    </div>
-    <div className="question-box">
-        <p>Can I schedule future transfers?</p>
-        <button className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
-    <div className="expandable">
-    <p className="answer small">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus.
-            Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis
-            accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
-            gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse
-            ut consequat.</p>
-    </div>       
-    <div className="question-box">
-        <p>When can I use Banking App services?</p>
-        <button className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
-    <div className="question-box">
-        <p>Can I create my own password that is easy for me to remember?                
-        </p>
-        <button className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
-    <div className="question-box">
-        <p>What happens if I forget or lose my password?</p>
-        <button className="btn-round btn-gray">
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
-</div>
+        <Accordion /> 
 </div>
 </section>
   )

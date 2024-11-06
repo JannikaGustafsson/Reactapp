@@ -10,7 +10,9 @@ import Carousel from './components/Carousel'
 import BulletPoints from './components/BulletPoints'
 import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
-import DarkModeSwitch from './components/DarkModeSwitch'
+
+
+
 
 function App() {  
 
@@ -22,16 +24,16 @@ function App() {
         <Route />        
     </BrowserRouter> */}
     <Header />
-    <DarkModeSwitch />
     <main>
       <Hero />
       <Logos />
       <Features />
       <Carousel />
     </main>
-    <BulletPoints />
+    <BulletPoints />    
     <Reviews />
     <FAQ />
+    
     <Newsletter />
     <Footer />         
   </>

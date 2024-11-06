@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+
 const DarkModeSwitch = () => {
     const [isDarkMode, setIsDarkMode] = useState(false)
 
@@ -29,13 +30,16 @@ const DarkModeSwitch = () => {
             setIsDarkMode(false)
         }
 
-    }, [])
+    }, []) 
 
- 
-
-    // return (
-        
-    // )
+    return (
+    <div id="darkmode-toggle">
+        <label className="toggle">
+        <input id="darkmode-switch" type="checkbox" aria-label="darkmode toggle" onChange="toggleDarkMode()" />
+        <span className="slider"></span>
+        </label>                   
+    </div> 
+    )
 }
 
 export default DarkModeSwitch
