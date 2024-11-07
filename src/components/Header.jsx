@@ -4,6 +4,8 @@ import IconSignIn from '../assets/images/icons/icon-signin.svg'
 import DarkModeSwitch from './DarkModeSwitch'
 
 
+
+
 const Header = () => {
 
   return (
@@ -11,8 +13,9 @@ const Header = () => {
         <nav className="main-navigation">               
          <div className="left-navigation">
              <a href="/">
-             <img src={Logotype} alt="App Logo" />                
              </a>
+             <img src={Logotype} alt="App Logo" />
+             <span className="logo-text">Silicon</span>                                    
              <a href="#" className="nav-link">Features</a>
              <a href="#" className="nav-link">Contact</a>
          </div>                  

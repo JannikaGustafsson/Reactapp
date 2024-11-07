@@ -71,7 +71,7 @@ const Newsletter = () => {
             <div className="input-container">
                 <div className="flex">            
                     <div className="form-group">
-                    <input className="input-c" type="email" name="email" required placeholder="Your Email" aria-label="Email address" value={formData.email} onChange={handleChange} request />
+                    <input className="input-c" type="email" name="email" required placeholder="Your Email" aria-label="Email address" value={formData.email} onChange={handleChange} />
                     <img src={Letter} alt="Envelope icon" className="envelope-icon" />
                     <span>{errors.email && errors.email}</span>
                     </div>
