@@ -1,66 +1,50 @@
 import React, { useState } from 'react'
 import Bell from '../assets/images/icons/bell.svg'
 import Letter from '../assets/images/icons/letter-small.svg'
-import { json } from 'react-router-dom'
+// import { json } from 'react-router-dom'
 
 const Newsletter = () => {
     const [formData, setFormData] = useState({email: ''})
     const [errors, setErrors] = useState({})
-    const [submitted, setSubmitted] = useState(false)
+
+    const validateField = (name, value) => {
+        let error = ''
+
+        if (!/^[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z0-9]{2,}$/.test(value)) {
+            error = "Must be a valid email address."
+        }
+        setErrors(prevErrors => ({ ...prevErrors, [name]: error }))
+    }
+
+    const validateForm = () => {
+        const newErrors = {}
+
+        if (!/^[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z0-9]{2,}$/.test(formData.email)) {
+            newErrors.email = "Must be a valid email address."
+        }
+
+        setErrors(newErrors)
+        return Object.keys(newErrors).length === 0;
+    }    
 
     const handleChange = (e) => {
-        const {email, value} = e.target;
-        setFormData({...formData, [email]: value})
-
-        if (value.trim() === '') {
-            setErrors(prevErrors => ({...prevErrors, [email]: 'This field is required'}))
-        } else {
-            setErrors(prevErrors => ({...prevErrors, [email]: ''}))
-        }
-    } 
-
-    const handleOK = () => {
-        setSubmitted(false)
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value })
+        validateField(name, value)
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const newErrors = {}
-        Object.keys(formData).forEach(field => {
-            if (formData[field].trim() === '') {
-                newErrors[field] = 'This field is required'
-            }
-        })
-
-        if (Object.keys(newErrors).length > 0) {
-            setErrors(newErrors)
-            return
+        const isValid = validateForm()        
+        if (isValid) {
+            console.log('Form is valid')
+            //fetch('https://.....', { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.strinify(formData) })
         }
-
-        const res = await fetch ('https://localhost:7066/api/contactform', {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-    
-        if (res.ok) {
-           setSubmitted(true)
-           setFormData({email: ''})
-        }        
-    }
-    if (submitted) {
-        return (
-            <div ClassName="informationbox">
-                <h1>Thank you for your subscribtion!</h1>
-                <p>We will start your subscribtion as of now</p>
-                <button className="btn-green" onClick={handleOK}>OK</button>
-            </div>
-        )
-    }
-
+        else {
+            console.log('Form is invalid')
+        }            
+    }   
   return (
         <form onSubmit={handleSubmit} noValidate>
             <div id="newsletter" className="flex">
@@ -71,9 +55,9 @@ const Newsletter = () => {
             <div className="input-container">
                 <div className="flex">            
                     <div className="form-group">
-                    <input className="input-c" type="email" name="email" required placeholder="Your Email" aria-label="Email address" value={formData.email} onChange={handleChange} />
+                    <input className="input-c" type="email" name="email" placeholder="Your Email" aria-label="Email address" value={formData.email} onChange={handleChange} required />
                     <img src={Letter} alt="Envelope icon" className="envelope-icon" />
-                    <span>{errors.email && errors.email}</span>
+                    {errors.email && <span className="validation-errors"> {errors.email}</span>}
                     </div>
                     <button type="submit" className="style" aria-label="Subscribe to newsletter">Subscribe</button>
                 </div>

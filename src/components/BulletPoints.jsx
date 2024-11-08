@@ -10,7 +10,7 @@ import CardPetruding from '../assets/images/icons/card-petruding.png'
 
 const BulletPoints = () => {
   return (
-    <section id="bullet-points">
+    <section className="bullet-points">
         <div className="flex">
             <div className="column-left">
                 <h4 className="h2">Make your money transfer simple and clear</h4>
@@ -41,7 +41,7 @@ const BulletPoints = () => {
                 <img src={Contact} alt="Contact" />           
                 <img className="img-card" src={CardPetruding} alt="A credit card petruding" />            
             </div>
-            <div className="row-2column-2">
+            <div className="column-2">
                 <h4 className="h2">Receive payment from international bank details</h4>
                 <div className="flex">
                     <div className="icon-container">

@@ -370,7 +370,7 @@ ol, ul {
 }     
 /* Carousel end */
 
-#bullet-points {
+.bullet-points {
     padding: 8rem 20%;
     h4 {
         padding-bottom: 2rem;
@@ -428,9 +428,9 @@ ol, ul {
         top: 6.5em;        
     }
     .row-2 {        
-        margin-top: 13rem;
+        margin-top: 10rem;
     }
-    .row-2 column-2 {
+    .column-2 {
         padding-left: 15rem;
         margin-top: 2rem;
         max-width: 720px;
@@ -463,7 +463,7 @@ ol, ul {
     }   
     .card, .card-2 {
         position: relative;
-        background-color: var(--clr-white);
+        background: var(--clr-white);
         border: 2px;
         border-radius: 10px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -666,9 +666,10 @@ ol, ul {
 }
 .form-group {
     position: relative;
-    flex: 1;  
+    flex: 1;
+    
 }
-.input-c {
+.input-c {   
     padding-left: 70px;
     padding-top: 1rem;
     padding-right: 3rem;   
