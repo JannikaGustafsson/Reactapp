@@ -47,19 +47,19 @@ const Newsletter = () => {
     }   
   return (
         <form onSubmit={handleSubmit} noValidate>
-            <div id="newsletter" className="flex">
+            <div id="newsletter">
                 <div className="flex bell-img">         
                     <img className="bell" src={Bell} alt="Bell icon" />
                     <h2>Subscribe to our newsletter to stay informed about latest updates</h2> 
                 </div>        
             <div className="input-container">
-                <div className="flex">            
+                <div>            
                     <div className="form-group">
                     <input className="input-c" type="email" name="email" placeholder="Your Email" aria-label="Email address" value={formData.email} onChange={handleChange} required />
                     <img src={Letter} alt="Envelope icon" className="envelope-icon" />
-                    {errors.email && <span className="validation-errors"> {errors.email}</span>}
-                    </div>
                     <button type="submit" className="style" aria-label="Subscribe to newsletter">Subscribe</button>
+                    </div>
+                    {errors.email && <span className="validation-errors"> {errors.email}</span>}
                 </div>
             </div>
             </div>

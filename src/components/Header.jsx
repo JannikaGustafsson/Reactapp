@@ -4,8 +4,6 @@ import IconSignIn from '../assets/images/icons/icon-signin.svg'
 import DarkModeSwitch from './DarkModeSwitch'
 
 
-
-
 const Header = () => {
 
   return (
@@ -15,6 +13,8 @@ const Header = () => {
              <a href="/">
              </a>
              <img src={Logotype} alt="App Logo" />
+             
+
              <span className="logo-text">Silicon</span>                                    
              <a href="#" className="nav-link">Features</a>
              <a href="#" className="nav-link">Contact</a>

@@ -277,6 +277,7 @@ ol, ul {
     background-color: var(--clr-market-btn);
     padding: .5em 1em;
     border-radius: var(--br-lg);
+    
 
     img {
         height: 3em;
@@ -463,7 +464,7 @@ ol, ul {
     }   
     .card, .card-2 {
         position: relative;
-        background: var(--clr-white);
+        background: var(--clr-white-1);
         border: 2px;
         border-radius: 10px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -564,7 +565,6 @@ ol, ul {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         cursor: pointer;        
     }
-
     .questionbox-header {
         display: flex;
         justify-content: space-between;
@@ -578,8 +578,7 @@ ol, ul {
     }    
     .open .expandable {
     display: block;
-    }
-    
+    }    
     .closed .expandable {
         display: none;
     }
@@ -591,11 +590,9 @@ ol, ul {
     .expandable {
         min-height: 0px;
     }
-
     .btn-up {
         background-color: var(--clr-gray-100);
-        color: var(--clr-text-navigation);           
-
+        color: var(--clr-text-navigation);
     }    
     .btn-round {
         display: flex;
@@ -609,11 +606,9 @@ ol, ul {
         border: 0;
         cursor: pointer;
         margin-left: auto;
-        background-color: var(--clr-white);
-        transition: all 250ms;
-        
+        background-color: var(--clr-white-1);
+        transition: all 250ms;        
     }
-
     .btn-gray {
         background-color: var(--clr-gray-100);
         color: var(--clr-text-navigation);        
@@ -623,6 +618,7 @@ ol, ul {
     }
 
 #newsletter {
+    display: flex;
     background-color: var(--clr-gray-100);
     padding-top: 4rem;
     padding-bottom: 5rem;
@@ -639,6 +635,7 @@ ol, ul {
     position: relative;    
 }
 .style {
+    
     border-radius: 0 10px 10px 0;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -653,7 +650,7 @@ ol, ul {
     }
 }
 .input-container {
-    display: flex;
+    
     align-items: center;     
 }
 .envelope-icon {
@@ -664,12 +661,13 @@ ol, ul {
     width: 15px;
     height: auto;    
 }
-.form-group {
+.form-group {  
+    display: flex;  
     position: relative;
-    flex: 1;
-    
+    flex: 1;    
 }
-.input-c {   
+.input-c {
+    background: var(--clr-bg);
     padding-left: 70px;
     padding-top: 1rem;
     padding-right: 3rem;   

@@ -2,6 +2,7 @@ import React from 'react'
 import AppstoreLogo from '../assets/images/icons/appstore-light.svg'
 import GoogleLogo from '../assets/images/icons/googleplay-light.svg'
 import Iphones from '../assets/images/phones.svg'
+import Dark from '../assets/images/icons/appstore.svg'
 
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
         <div className="market-btns">
             <a href="#" className="store-btn">
                 <span className="sr-only">Download on App Store</span>
-                <img src={AppstoreLogo} alt="App Store Logo"/>        
+                <img src={AppstoreLogo} alt="App Store Logo"/>       
             </a>                        
             <a href="#" className="store-btn">
                 <span className="sr-only">Get it on Google Play</span>
