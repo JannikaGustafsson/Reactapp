@@ -13,7 +13,6 @@ const Accordion = () => {
     else
         return 'closed'
     }
-
     const handleClick = (isOpen, setIsOpen) => {
         if (isOpen) {
             setIsOpen(false)
@@ -21,7 +20,6 @@ const Accordion = () => {
         else {
             setIsOpen(true)
         }       
-    
     }
 
   return (

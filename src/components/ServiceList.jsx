@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ServiceItem from './ServiceItem'
-// import axios from 'axios'
+
 
 
 const ServiceList = () => {
@@ -16,9 +16,6 @@ const ServiceList = () => {
         getDataUsingFetch()
 
     }, [])
-
-
-
     return (
         <div className="services">
             {
@@ -26,7 +23,6 @@ const ServiceList = () => {
 
             }
         </div>
-    )
-}
+    )}
 
 export default ServiceList

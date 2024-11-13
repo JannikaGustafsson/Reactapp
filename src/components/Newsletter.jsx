@@ -39,7 +39,7 @@ const Newsletter = () => {
         const isValid = validateForm()        
         if (isValid) {
             console.log('Form is valid')
-            //fetch('https://.....', { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.strinify(formData) })
+            fetch('https://jsonplaceholder.typicode.com/posts?_limit=10', { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.stringify(formData) })
         }
         else {
             console.log('Form is invalid')

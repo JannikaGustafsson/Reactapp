@@ -30,8 +30,7 @@ return (
             <img src={Logoipsum6} alt="Logoipsum" />
         </div>
     </section>
-)
-}
+)}
 
 
 export default Logos

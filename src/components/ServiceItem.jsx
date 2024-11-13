@@ -16,7 +16,6 @@ const ServiceItem = ({item}) => {
             </div>
             </div>
         </Link>
-    )
-}
+    )}
 
 export default ServiceItem

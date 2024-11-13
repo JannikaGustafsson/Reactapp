@@ -17,7 +17,6 @@ const DarkModeSwitch = () => {
             localStorage.setItem('theme', 'light');
         }
 }
-
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme')
 

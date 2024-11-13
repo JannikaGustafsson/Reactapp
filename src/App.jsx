@@ -13,9 +13,6 @@ import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
 
 
-
-
-
 function App() {  
 
   return (

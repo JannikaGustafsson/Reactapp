@@ -13,8 +13,6 @@ const Header = () => {
              <a href="/">
              </a>
              <img src={Logotype} alt="App Logo" />
-             
-
              <span className="logo-text">Silicon</span>                                    
              <a href="#" className="nav-link">Features</a>
              <a href="#" className="nav-link">Contact</a>
