@@ -28,12 +28,12 @@ function App() {
       <Logos />
       <Features />
       <Carousel />
-    </main>
     <BulletPoints />    
     <Reviews />
     <FAQ />    
     <Newsletter />
     <Footer />         
+    </main>
   </>
   )
 }

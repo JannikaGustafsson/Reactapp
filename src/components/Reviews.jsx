@@ -22,17 +22,9 @@ const Reviews = () => {
             <p className="author-f">Frannie Summers</p>
             <p className="c">Designer</p>
 </div>
-    <div className="card-2">
-        <div className="quotes">
-            <img src={Quotes} alt="Quote icon" />
-        </div>
-        <img className="rating" src={RatingFull} alt="5 out of 5 stars" />
-        <p className="albert-review">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla
-        tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
-        <img src={Face2} alt="Albert Flores" />
-        <p className="author-a">Albert Flores</p>
-        <p className="c">Developer</p>
-    </div>
+
+
+
 </div>
 </div>        
 </section>
