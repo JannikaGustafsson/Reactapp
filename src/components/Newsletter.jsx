@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Bell from '../assets/images/icons/bell.svg'
 import Letter from '../assets/images/icons/letter-small.svg'
-// import { json } from 'react-router-dom'
+
 
 const Newsletter = () => {
     const [formData, setFormData] = useState({email: ''})

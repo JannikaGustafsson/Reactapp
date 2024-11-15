@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter,} from 'react-router-dom'
 import './assets//css/index.css'
 import './assets/css/dark-theme.css'
 import Header from './components/Header'
@@ -18,10 +18,6 @@ function App() {
   return (
   <>    
     <BrowserRouter />
-    {/* <Routes>
-      <Route path="/">
-        <Route />        
-    </BrowserRouter> */}
     <Header />
     <main>
       <Hero />

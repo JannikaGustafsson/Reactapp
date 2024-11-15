@@ -1,7 +1,5 @@
-import React from 'react'
-import Quotes from '../assets/images/icons/quotes.svg'
-import Face1 from '../assets/images/icons/Frannie.png'
-import Face2 from '../assets/images/icons/Albert.png'
+import React, {useState, useEffect} from 'react'
+
 import Testimonial from './Testimonial'
 
 const ClientTestimonials = () => {
@@ -19,24 +17,20 @@ const ClientTestimonials = () => {
   }, [])
  
   return (
-    <section id="Testimonials">
+    <section id="Testimonials" className="Testimonials">
           <div className="flex">
             <h4 className="h1 flex headline-left">Clients are Loving Our App</h4>
             <div className="cards flex">
-
-            <div className="card">
             <div className="quotes">
-            <img src={Quotes} alt="Quote icon" />
+            
           </div>
             {
               testimonials.map((testimonial) => (
               <Testimonial key={testimonial.id} item={testimonial} />
             ))
-          }
+          }  
 
-        
-
-      </div>
+      
       </div>
       </div>        
     </section>

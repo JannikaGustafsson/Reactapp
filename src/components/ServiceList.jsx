@@ -7,7 +7,7 @@ const ServiceList = () => {
     const [ServiceItems, setServiceItems] = useState ([])
 
     const getDataUsingFetch = async () => {
-        // här ska web API läggas in
+      
         const res = await fetch('')
        setServiceItems(await res.json())
     }

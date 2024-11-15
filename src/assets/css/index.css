@@ -258,7 +258,6 @@ ol, ul {
 }    
 /* Logos end */   
 
-/* Hero start */
 .hero {
     display: flex;
     position: relative;
@@ -453,7 +452,8 @@ ol, ul {
         width: .7rem;
     }    
 }
-#Testimonaials {
+/* Testimonails start */
+.Testimonials {
     background-color: var(--clr-bg-100);
     padding-top: 3%;
     padding-left: 15%;
@@ -503,6 +503,7 @@ ol, ul {
     margin-top: 10px;
     color: var(--clr-star);
 }
+/* Testimonails end */
 #faq {
     flex: 1;
     margin-top: 3rem;

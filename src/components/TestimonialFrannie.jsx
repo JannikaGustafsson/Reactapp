@@ -1,9 +1,10 @@
 import React from 'react'
 import StarRating from './StarRating'
+import Quotes from '../assets/images/icons/quotes.svg'
 
 const TestimonialFrannie = ({item}) => {
   return (
-        <div className="card-2">
+        <div className="card">
         <div className="quotes">            
             <img src={Quotes} alt="Quote icon" />
         </div>
@@ -15,10 +16,5 @@ const TestimonialFrannie = ({item}) => {
         </div>
     )
 }
-
-
-
-
-
 
 export default TestimonialFrannie
