@@ -1,8 +1,7 @@
 import React from 'react'
 import StarRating from './StarRating'
 
-
-const Testimonial = ({item}) => {
+const TestimonialFrannie = ({item}) => {
   return (
         <div className="card-2">
         <div className="quotes">            
@@ -11,10 +10,15 @@ const Testimonial = ({item}) => {
         <StarRating starRating={item.starRating} />
             <p className="albert-review">{item.comment}</p>
             <img src={item.avatarUrl} alt={item.author} />
-            <p className="author-a">{item.author}</p>
+            <p className="author-f">{item.author}</p>
             <p className="c">{item.jobRole}</p>
         </div>
     )
 }
 
-export default Testimonial
+
+
+
+
+
+export default TestimonialFrannie

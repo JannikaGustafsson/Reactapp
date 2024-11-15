@@ -15,7 +15,8 @@
     --clr-primary-s: 90%;
     --clr-primary-l: 70%;
     --clr-white: #FFFFFF;
-    --clr-white-1: #FFFFFF; 
+    --clr-white-1: #FFFFFF;
+    --clr-star: #ffd900e0; 
 
     --clr-bg-image: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%),;
     --clr-bg: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%),#ffffff;
@@ -54,7 +55,8 @@
     --clr-primary-s: 90%;
     --clr-primary-l: 70%;
     --clr-white: #FFFFFF;
-    --clr-white-1: #ffffff0f;  
+    --clr-white-1: #ffffff0f;
+    --clr-star: #ffd900e0;   
 
     --clr-bg-image: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%),;
     --clr-bg: #0b0f19f4;

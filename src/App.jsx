@@ -9,8 +9,8 @@ import Logos from './components/Logos'
 import Features from './components/Features'
 import Carousel from './components/Carousel'
 import BulletPoints from './components/BulletPoints'
-import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
+import ClientTestimonials from './components/ClientTestimonials'
 
 
 function App() {  
@@ -29,7 +29,7 @@ function App() {
       <Features />
       <Carousel />
     <BulletPoints />    
-    <Reviews />
+    <ClientTestimonials />
     <FAQ />    
     <Newsletter />
     <Footer />         

@@ -453,7 +453,7 @@ ol, ul {
         width: .7rem;
     }    
 }
-#reviews {
+#Testimonaials {
     background-color: var(--clr-bg-100);
     padding-top: 3%;
     padding-left: 15%;
@@ -498,6 +498,10 @@ ol, ul {
     padding-left: 15%;
     padding-right: 15%;
     margin: 20px auto;
+}
+.stars .fa-solid {   
+    margin-top: 10px;
+    color: var(--clr-star);
 }
 #faq {
     flex: 1;
